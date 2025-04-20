@@ -108,10 +108,34 @@ header .head1 {
   justify-content: space-around;
 }
 
-[attribute="number"] {
-  position: absolute;
-  right: -13px;
+.dropdown {
+  min-width: 238px;
+
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+}
+.hide {
+  display: none;
+  width: 238px;
 }
 .cart {
   position: relative;
+  display: inline-block;
+}
+
+.num_products {
+  background-color: rgb(51, 179, 107);
+  color: white;
+  font-size: 12px;
+  width: 17px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 1px;
+  right: -8px;
+  border: 3px solid var(--header-bg);
 }

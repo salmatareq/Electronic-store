@@ -41,7 +41,7 @@
             <img src="./public/assets/Secondary Button persone.svg" alt="" />
             <div class="cart">
               <img src="./public/assets/Secondary Button cart.svg" alt="" />
-              <img src="./public/assets/number.svg" alt="" attribute="number" />
+              <div class="num_products" attribute="number">0</div>
             </div>
           </div>
         </nav>
@@ -50,7 +50,8 @@
         <table>
           <tr>
             <td class="Categories">
-              Categories <img src="./public/assets/arrow.svg" alt="" />
+              Categories
+              <img class="toclick" src="./public/assets/arrow.svg" alt="" />
             </td>
             <td>Best Sellers</td>
             <td>Today’s Deals</td>
@@ -66,36 +67,40 @@
     <main>
       <div class="sec1">
         <div class="top">
-          <div class="menu">
-            <div class="categ">
-              <img src="./public/assets/computer.svg" alt="" />
-              <div class="type">Computers & Accessories</div>
-              <img src="./public/assets/arrow.svg" alt="" />
-            </div>
-            <div class="categ">
-              <img src="./public/assets/monitor-2.svg" alt="" />
-              <div class="type">TV, Video & Audio</div>
-              <img src="./public/assets/arrow.svg" alt="" />
-            </div>
-            <div class="categ">
-              <img src="./public/assets/smartphone-2.svg" alt="" />
-              <div class="type">Smartphones & Tablets</div>
-              <img src="./public/assets/arrow.svg" alt="" />
-            </div>
-            <div class="categ">
-              <img src="./public/assets/speaker-2.svg" alt="" />
-              <div class="type">Speakers & Home Music</div>
-              <img src="./public/assets/arrow.svg" alt="" />
-            </div>
-            <div class="categ">
-              <img src="./public/assets/camera-2.svg" alt="" />
-              <div class="type">Cameras, Photo & Video</div>
-              <img src="./public/assets/arrow.svg" alt="" />
-            </div>
-            <div class="categ">
-              <img src="./public/assets/printer-2.svg" alt="" />
-              <div class="type">Printers & Ink</div>
-              <img src="./public/assets/arrow.svg" alt="" />
+          <div class="dropdown">
+            <div class="hide">
+              <div class="menu">
+                <div class="categ">
+                  <img src="./public/assets/computer.svg" alt="" />
+                  <div class="type">Computers & Accessories</div>
+                  <img src="./public/assets/arrow.svg" alt="" />
+                </div>
+                <div class="categ">
+                  <img src="./public/assets/monitor-2.svg" alt="" />
+                  <div class="type">TV, Video & Audio</div>
+                  <img src="./public/assets/arrow.svg" alt="" />
+                </div>
+                <div class="categ">
+                  <img src="./public/assets/smartphone-2.svg" alt="" />
+                  <div class="type">Smartphones & Tablets</div>
+                  <img src="./public/assets/arrow.svg" alt="" />
+                </div>
+                <div class="categ">
+                  <img src="./public/assets/speaker-2.svg" alt="" />
+                  <div class="type">Speakers & Home Music</div>
+                  <img src="./public/assets/arrow.svg" alt="" />
+                </div>
+                <div class="categ">
+                  <img src="./public/assets/camera-2.svg" alt="" />
+                  <div class="type">Cameras, Photo & Video</div>
+                  <img src="./public/assets/arrow.svg" alt="" />
+                </div>
+                <div class="categ">
+                  <img src="./public/assets/printer-2.svg" alt="" />
+                  <div class="type">Printers & Ink</div>
+                  <img src="./public/assets/arrow.svg" alt="" />
+                </div>
+              </div>
             </div>
           </div>
           <div class="right-photo">
@@ -149,5 +154,6 @@
         </div>
       </div>
     </main>
+    <script src="./public/actoins.js"></script>
   </body>
 </html>
