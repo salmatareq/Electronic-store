@@ -5,6 +5,7 @@
 .top {
   display: flex;
   flex-direction: row;
+  margin-top: 140px;
 }
 .right-photo {
   width: 1300px;
