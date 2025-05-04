@@ -95,3 +95,17 @@ buttons.forEach((btn) => {
     arr.push(imgSrc);
   });
 });
+
+const check = document.querySelector("#check_out");
+check.addEventListener("click", (e) => {
+  if (totalprice != 0) { 
+  alert(
+    "Order Confirmed! Thanks for your purchase. Your order will arrive within 15 days."
+  );
+  }
+  else {
+      alert(
+      " It looks like you haven't placed an order yet. Start your shopping now and enjoy great deals!"
+      );
+  }
+});

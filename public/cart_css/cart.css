@@ -16,6 +16,9 @@
   color: var(--font-light);
   font-size: 30px;
 }
+#x:hover {
+  transform: scale(1.1);
+}
 top {
   display: flex;
   justify-content: space-between;
@@ -98,6 +101,9 @@ bottom {
   color: var(--font-light);
   font-size: 20px;
 }
+.x_product:hover {
+  transform: scale(1.1);
+}
 #img img {
   width: 80px;
   height: 80px;
@@ -106,4 +112,10 @@ bottom {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+.cart {
+  transition: all 0.3s ease;
+}
+.cart:hover {
+  transform: translateY(3px);
 }

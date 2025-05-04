@@ -8,6 +8,7 @@ header {
   color: white;
   background-color: var(--header-bg);
   position: fixed;
+  top: 0px;
 }
 nav {
   display: flex;
@@ -53,6 +54,7 @@ header .top-header {
 }
 td {
   width: 135px;
+    
 }
 .navbar {
   width: 94%;
@@ -62,9 +64,14 @@ td {
 tr {
   height: 48px;
 }
+td a:hover{
+    color: #e37070;
+  transform: scale(1.1);
+}
 a {
   text-decoration: none;
   color: white;
+    transition: all 0.3s ease;
 }
 .Categories {
   display: flex;

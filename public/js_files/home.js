@@ -11,15 +11,10 @@ document.addEventListener("DOMContentLoaded", function () {
     } else if (!emailRegex.test(email)) {
       alert("Please enter a valid email address.");
     } else {
-      alert("Thank you for subscribing with ${email}!");
+      alert(`Thank you for subscribing with ${email}`);
       emailInput.value = "";
     }
   });
 });
 
-// console.log("i am here");
-// let love = document.querySelector(".love");
-// let love2= document.querySelector(".love");
-// love.addEventListener('click', function () {
-//   love2.style.
-// });///////////خلي القلب يبقي احمر
+console.log("i am here");
