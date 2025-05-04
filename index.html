@@ -4,26 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cartzilla</title>
-    <link rel="icon" href="/public/assets/logo.svg" type="image/png" />
-    <link href="./public/css/header.css" rel="stylesheet" />
-    <link href="./public/css/sec1.css" rel="stylesheet" />
+
+    <link rel="icon" href="./public/assets/logo.svg" type="image/svg+xml" />
+
+    <link href="./public/Home_css/header.css" rel="stylesheet" />
+    <link href="./public/Home_css/sec1.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bitter:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Qwitcher+Grypen:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link href="./public/css/index.css" rel="stylesheet" />
+    <link href="./public/cart_css/cart.css" rel="stylesheet" />
+    <link href="./public/Home_css/index.css" rel="stylesheet" />
 
-    <link href="./public/css/stylesec2.css" rel="stylesheet" />
-    <link href="./public/css/sec4.css" rel="stylesheet" />
-    <link href="./public/css/footer.css" rel="stylesheet">
+    <link href="./public/Home_css/stylesec2.css" rel="stylesheet" />
+    <link href="./public/Home_css/sec4.css" rel="stylesheet" />
+    <link href="./public/Home_css/footer.css" rel="stylesheet" />
   </head>
   <header>
     <div class="head1">
       <div class="top-header">
         <div class="head-icon">
-          <img src="./public/assets/logo.svg" alt="" />
+          <img src="./public/assets/logo.svg" alt=" " />
           Cartzilla
         </div>
         <nav>
@@ -42,7 +45,11 @@
           </div>
           <div class="icons">
             <img src="./public/assets/Secondary Button mode.svg" alt="" />
-            <img src="./public/assets/Secondary Button love.svg" alt="" />
+            <img
+              src="./public/assets/Secondary Button love.svg"
+              alt=""
+              class="love"
+            />
             <img src="./public/assets/Secondary Button persone.svg" alt="" />
             <div class="cart">
               <img src="./public/assets/Secondary Button cart.svg" alt="" />
@@ -58,11 +65,13 @@
               Categories
               <img class="toclick" src="./public/assets/arrow.svg" alt="" />
             </td>
-            <td>Best Sellers</td>
-            <td>Today’s Deals</td>
-            <td>New Arrivals</td>
-            <td>Gift Cards</td>
-            <td>Help Center</td>
+            <td></td>
+
+            <td><a href="">Home</a></td>
+            <td><a href="">Best Sellers</a></td>
+            <td><a href="">About Us</a></td>
+            <td><a href="">Register</a></td>
+            <td><a href="">Help center</a></td>
           </tr>
         </table>
       </div>
@@ -70,6 +79,32 @@
   </header>
   <body>
     <main>
+      <div id="cart_sec">
+        <top>
+          <h2>Shopping cart</h2>
+          <button id="x">×</button></top
+        >
+        <div id="products">
+          <!-- <div id="product">
+            <div id="img"><img src="./public/assets/chat.svg" alt="" /></div>
+            <div id="details">
+              hjgb
+              <div class="cart_price">$540.54</div>
+              <div class="quantity-selector">
+                <button class="minus">-</button>
+                <span class="quantity">1</span>
+                <button class="plus">+</button>
+              </div>
+            </div>
+            <button id="x_product" >×</button>
+          </div> -->
+        </div>
+
+        <bottom>
+          <div class="total_price">subtotal:<price>$00</price></div>
+          <button type="button" id="check_out">Checkout</button>
+        </bottom>
+      </div>
       <div class="sec1">
         <div class="top">
           <div class="dropdown">
@@ -159,49 +194,32 @@
         </div>
       </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       <div id="sec2">
-        
         <div class="container2">
           <div class="heading">New arrivals</div>
 
           <div class="part1">
-            <img src="sec2pic/banner.png" alt="banner">
+            <img src="sec2pic/banner.png" alt="banner" />
           </div>
 
-
           <div class="part2">
-
             <div class="card">
               <div class="cardimg">
-                <img src="sec2pic/airboades.png" alt="airboades">
+                <img src="sec2pic/airboades.png" alt="airboades" />
               </div>
               <div class="cardbody">
-                <img src="sec2pic/stars.png" alt="5stars">
+                <img src="sec2pic/stars.png" alt="5stars" />
                 <p>Headphones Apple AirPods 2 Pro</p>
                 <h2>$209.99</h2>
               </div>
             </div>
 
-            <div class="card" >
-              <div class="cardimg"id="card2img">
-                <img src="sec2pic/blacklap.png" alt="blacklaptop">
+            <div class="card">
+              <div class="cardimg" id="card2img">
+                <img src="sec2pic/blacklap.png" alt="blacklaptop" />
               </div>
-              <div class="cardbody"id="card2">
-                <img src="sec2pic/rating4.png" alt="4stars">
+              <div class="cardbody" id="card2">
+                <img src="sec2pic/rating4.png" alt="4stars" />
                 <p>Tablet Apple iPad Pro M1</p>
                 <h2>$640.00</h2>
               </div>
@@ -209,40 +227,34 @@
 
             <div class="card">
               <div class="cardimg">
-                <img src="sec2pic/handclock.png" alt="clock">
+                <img src="sec2pic/handclock.png" alt="clock" />
               </div>
               <div class="cardbody">
-                <img src="sec2pic/stars.png" alt="5stars">
+                <img src="sec2pic/stars.png" alt="5stars" />
                 <p>Smart Watch Series 7, White</p>
                 <h2>$449.00</h2>
               </div>
             </div>
 
             <div class="card">
-              <div class="cardimg"id="card4img">
-                <img src="sec2pic/ipad.png" alt="ipad">
+              <div class="cardimg" id="card4img">
+                <img src="sec2pic/ipad.png" alt="ipad" />
               </div>
-              <div class="cardbody"id="card4">
-                <img src="sec2pic/rating.png" alt="5stars">
+              <div class="cardbody" id="card4">
+                <img src="sec2pic/rating.png" alt="5stars" />
                 <p>Tablet Apple iPad Air M1</p>
                 <h2>$540.00</h2>
               </div>
             </div>
-
-
           </div>
-          
-        
 
-        
           <div class="part3">
-
             <div class="card">
               <div class="cardimg">
-                <img src="sec2pic/iphone.png" alt="iphone">
+                <img src="sec2pic/iphone.png" alt="iphone" />
               </div>
               <div class="cardbody">
-                <img src="sec2pic/rating4.png" alt="4stars">
+                <img src="sec2pic/rating4.png" alt="4stars" />
                 <p>Apple iPhone 14 128GB White</p>
                 <h2>$899.00</h2>
               </div>
@@ -250,10 +262,10 @@
 
             <div class="card">
               <div class="cardimg">
-                <img src="sec2pic/laptop.png" alt="laptop">
+                <img src="sec2pic/laptop.png" alt="laptop" />
               </div>
               <div class="cardbody">
-                <img src="sec2pic/rating.png" alt="5stars">
+                <img src="sec2pic/rating.png" alt="5stars" />
                 <p>Laptop Apple MacBook Pro 13 M2</p>
                 <h2>$1,200.00</h2>
               </div>
@@ -261,10 +273,10 @@
 
             <div class="card">
               <div class="cardimg">
-                <img src="sec2pic/thumb.png" alt="glasses">
+                <img src="sec2pic/thumb.png" alt="glasses" />
               </div>
               <div class="cardbody">
-                <img src="sec2pic/rating4.png" alt="4stars">
+                <img src="sec2pic/rating4.png" alt="4stars" />
                 <p>VRB01 Virtual Reality Glasses</p>
                 <h2>$340.99</h2>
               </div>
@@ -272,253 +284,309 @@
 
             <div class="card">
               <div class="cardimg">
-                <img src="sec2pic/whitehphone.png" alt="headphone">
+                <img src="sec2pic/whitehphone.png" alt="headphone" />
               </div>
               <div class="cardbody">
-                <img src="sec2pic/rating.png" alt="5stars">
-                <p>Wireless Bluetooth Headphones Sony </p>
+                <img src="sec2pic/rating.png" alt="5stars" />
+                <p>Wireless Bluetooth Headphones Sony</p>
                 <h2>$357.00</h2>
               </div>
             </div>
             <div class="clear"></div>
-
-
           </div>
         </div>
-
       </div>
 
-
-
-
-
-
-
-
       <div id="sec3">
-        
         <div class="container3">
           <div class="heading3">
             <p>Trending products</p>
             <div class="leftwiew">
               <p>View All</p>
-              
-              <img src="sec2pic/Vector.png" alt="vector">
 
+              <img src="sec2pic/Vector.png" alt="vector" />
             </div>
-            
           </div>
 
-          
           <div class="part31">
-
             <div class="card3">
               <div class="cardimg3">
-                <img src="sec2pic/airboades.png" alt="airboades">
+                <img src="sec2pic/airboades.png" alt="airboades" />
               </div>
               <div class="cardbody3">
-                <img src="sec2pic/stars.png" alt="5stars">
+                <img src="sec2pic/stars.png" alt="5stars" />
                 <p>Headphones Apple AirPods 2 Pro</p>
                 <h2>$209.99</h2>
-                <img id="button"src="sec2pic/Secondary Button.png" alt="Secondary Button">
+                <img
+                  class="cart_button"
+                  src="sec2pic/Secondary Button.png"
+                  alt="Secondary Button"
+                />
               </div>
             </div>
 
             <div class="card3" id="card23">
               <div class="cardimg3">
-                <img src="sec2pic/blacklap.png" alt="blacklaptop">
+                <img src="sec2pic/blacklap.png" alt="blacklaptop" />
               </div>
               <div class="cardbody3">
-                <img src="sec2pic/rating4.png" alt="4stars">
+                <img src="sec2pic/rating4.png" alt="4stars" />
                 <p>Tablet Apple iPad Pro M1</p>
                 <h2>$640.00</h2>
-                <img id="button"src="sec2pic/Secondary Button.png" alt="Secondary Button">
+                <img
+                  class="cart_button"
+                  src="sec2pic/Secondary Button.png"
+                  alt="Secondary Button"
+                />
               </div>
             </div>
 
             <div class="card3">
               <div class="cardimg3">
-                <img src="sec2pic/handclock.png" alt="clock">
+                <img src="sec2pic/handclock.png" alt="clock" />
               </div>
               <div class="cardbody3">
-                <img src="sec2pic/stars.png" alt="5stars">
+                <img src="sec2pic/stars.png" alt="5stars" />
                 <p>Smart Watch Series 7, White</p>
                 <h2>$449.00</h2>
-                <img id="button" src="sec2pic/Secondary Button.png" alt="Secondary Button">
+                <img
+                  class="cart_button"
+                  src="sec2pic/Secondary Button.png"
+                  alt="Secondary Button"
+                />
               </div>
             </div>
 
-            <div class="card3"id="card43">
+            <div class="card3" id="card43">
               <div class="cardimg3">
-                <img src="sec2pic/ipad.png" alt="ipad">
+                <img src="sec2pic/ipad.png" alt="ipad" />
               </div>
               <div class="cardbody3">
-                <img src="sec2pic/rating.png" alt="5stars">
+                <img src="sec2pic/rating.png" alt="5stars" />
                 <p>Tablet Apple iPad Air M1</p>
                 <h2>$540.00</h2>
-                <img id="button"src="sec2pic/Secondary Button.png" alt="Secondary Button">
+                <img
+                  class="cart_button"
+                  src="sec2pic/Secondary Button.png"
+                  alt="Secondary Button"
+                />
               </div>
             </div>
-
-
           </div>
-          
-        
 
-        
           <div class="part32">
-
             <div class="card3">
               <div class="cardimg3">
-                <img src="sec2pic/iphone.png" alt="iphone">
+                <img src="sec2pic/iphone.png" alt="iphone" />
               </div>
               <div class="cardbody3">
-                <img src="sec2pic/rating4.png" alt="4stars">
+                <img src="sec2pic/rating4.png" alt="4stars" />
                 <p>Apple iPhone 14 128GB White</p>
                 <h2>$899.00</h2>
-                <img id="button"src="sec2pic/Secondary Button.png" alt="Secondary Button">
+                <img
+                  class="cart_button"
+                  src="sec2pic/Secondary Button.png"
+                  alt="Secondary Button"
+                />
               </div>
             </div>
 
             <div class="card3">
               <div class="cardimg3">
-                <img src="sec2pic/laptop.png" alt="laptop">
+                <img src="sec2pic/laptop.png" alt="laptop" />
               </div>
               <div class="cardbody3">
-                <img src="sec2pic/rating.png" alt="5stars">
+                <img src="sec2pic/rating.png" alt="5stars" />
                 <p>Laptop Apple MacBook Pro 13 M2</p>
                 <h2>$1,200.00</h2>
-                <img id="button"src="sec2pic/Secondary Button.png" alt="Secondary Button">
+                <img
+                  class="cart_button"
+                  src="sec2pic/Secondary Button.png"
+                  alt="Secondary Button"
+                />
               </div>
             </div>
 
             <div class="card3">
               <div class="cardimg3">
-                <img src="sec2pic/thumb.png" alt="glasses">
+                <img src="sec2pic/thumb.png" alt="glasses" />
               </div>
               <div class="cardbody3">
-                <img src="sec2pic/rating4.png" alt="4stars">
+                <img src="sec2pic/rating4.png" alt="4stars" />
                 <p>VRB01 Virtual Reality Glasses</p>
                 <h2>$340.99</h2>
-                <img id="button"src="sec2pic/Secondary Button.png" alt="Secondary Button">
+                <img
+                  class="cart_button"
+                  src="sec2pic/Secondary Button.png"
+                  alt="Secondary Button"
+                />
               </div>
             </div>
 
             <div class="card3">
               <div class="cardimg3">
-                <img src="sec2pic/whitehphone.png" alt="headphone">
+                <img src="sec2pic/whitehphone.png" alt="headphone" />
               </div>
               <div class="cardbody3">
-                <img src="sec2pic/rating.png" alt="5stars">
-                <p>Wireless Bluetooth Headphones Sony </p>
+                <img src="sec2pic/rating.png" alt="5stars" />
+                <p>Wireless Bluetooth Headphones Sony</p>
                 <h2>$357.00</h2>
-                <img id="button"src="sec2pic/Secondary Button.png" alt="Secondary Button"></img>
+                <img
+                  class="cart_button"
+                  src="sec2pic/Secondary Button.png"
+                  alt="Secondary Button"
+                />
               </div>
             </div>
-
-
           </div>
         </div>
-
       </div>
+
       <div class="sec4">
         <div class="left-sec">
-            <div class="discount">
-                <span class="percentage">20</span>
-                <span class="percent-symbol">%</span>
-                <span class="off">OFF</span>
-            </div>
+          <div class="discount">
+            <span class="percentage">20</span>
+            <span class="percent-symbol">%</span>
+            <span class="off">OFF</span>
+          </div>
         </div>
         <div class="middle-right-sec">
-        <div class="middle-sec">
+          <div class="middle-sec">
             <h2>SEASONAL WEEKLY SALE 2024</h2>
             <p>Use code <span class="code">Sale2024</span> to get best offer</p>
-        </div>
-        <div class="right-sec">
-            <img src="./sec2pic/bannerp4.png" alt="Camera Image" class="camera-image">
-        </div>
-        </div>
-    </div>
-    <div class="offers-top">
-      <div class="offers-header">
-        <h2>Special offers for you</h2>
-        <div class="countdown">
-          <span class="tag">12d</span>
-          <span class="tagp">:</span>
-          <span class="tag">10h</span>
-          <span class="tagp">:</span>
-          <span class="tag">12m</span>
+          </div>
+          <div class="right-sec">
+            <img
+              src="./sec2pic/bannerp4.png"
+              alt="Camera Image"
+              class="camera-image"
+            />
+          </div>
         </div>
       </div>
+
+      <div class="offers-top">
+        <div class="offers-header">
+          <h2>Special offers for you</h2>
+          <div class="countdown">
+            <span class="tag">12d</span>
+            <span class="tagp">:</span>
+            <span class="tag">10h</span>
+            <span class="tagp">:</span>
+            <span class="tag">12m</span>
+          </div>
+        </div>
         <div class="leftwiew">
           <p>View All</p>
-          <img src="sec2pic/Vector.png" alt="vector">
+          <img src="sec2pic/Vector.png" alt="vector" />
         </div>
       </div>
+
       <div class="line"></div>
       <div class="offers-grid">
-        <div class="offer-card">
-          <img src="./sec2pic/blackA.png" alt="Buds">
-          <div class="stars">★★★★☆ (14)</div>
-          <div class="product-name">Xiaomi Wireless Buds Pro</div>
-          <div class="prices">
-            <span>$129.99</span><span class="old">$156.00</span>
-            <img id="button" src="sec2pic/Secondary Button.png" alt="Secondary Button">
+        <div class="card3">
+          <div class="cardbody3">
+            <div class="cardimg3">
+              <img src="./sec2pic/blackA.png" alt="Buds" />
+            </div>
+            <div class="stars">★★★★☆ (14)</div>
+            <p>Xiaomi Wireless Buds Pro</p>
+            <div class="prices">
+              <h2>$129.99</h2>
+              <span class="old">$156.00</span>
+              <img
+                class="cart_button"
+                src="sec2pic/Secondary Button.png"
+                alt="Secondary Button"
+              />
+            </div>
           </div>
           <div class="available">Available: <strong>112</strong></div>
-          <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+          <div class="progress-bar">
+            <div class="progress" style="width: 85%"></div>
+          </div>
         </div>
-  
-        <div class="offer-card">
-          <img src="./sec2pic/handclock.png" alt="Watch">
-          <div class="stars">★★★★★ (142)</div>
-          <div class="product-name">Smart Watch Series 7, White</div>
-          <div class="prices">
-            <span>$429.00</span><span class="old">$486.00</span>
-            <img id="button" src="sec2pic/Secondary Button.png" alt="Secondary Button">
+
+        <div class="card3">
+          <div class="cardbody3">
+            <div class="cardimg3">
+              <img src="./sec2pic/handclock.png" alt="Watch" />
+            </div>
+            <div class="stars">★★★★★ (142)</div>
+            <p>Smart Watch Series 7, White</p>
+            <div class="prices">
+              <h2>$429.00</h2>
+              <span class="old">$486.00</span>
+              <img
+                class="cart_button"
+                src="sec2pic/Secondary Button.png"
+                alt="Secondary Button"
+              />
+            </div>
           </div>
           <div class="available">Available: <strong>45</strong></div>
-          <div class="progress-bar"><div class="progress" style="width: 65%;"></div></div>
+          <div class="progress-bar">
+            <div class="progress" style="width: 65%"></div>
+          </div>
         </div>
-  
-        <div class="offer-card">
-          <img src="./sec2pic/blackcam.png" alt="Camera">
-          <div class="stars">★★★★☆ (64)</div>
-          <div class="product-name">VRB01 Camera Nikon Max</div>
-          <div class="prices">
-            <span>$652.00</span><span class="old">$785.00</span>
-            <img id="button" src="sec2pic/Secondary Button.png" alt="Secondary Button">
+
+        <div class="card3">
+          <div class="cardbody3">
+            <div class="cardimg3">
+              <img src="./sec2pic/blackcam.png" alt="Camera" />
+            </div>
+            <div class="stars">★★★★☆ (64)</div>
+            <p>VRB01 Camera Nikon Max</p>
+            <div class="prices">
+              <h2>$652.00</h2>
+              <span class="old">$785.00</span>
+              <img
+                class="cart_button"
+                src="sec2pic/Secondary Button.png"
+                alt="Secondary Button"
+              />
+            </div>
+          </div>
+          <div class="available">Available: <strong>13</strong></div>
+          <div class="progress-bar">
+            <div class="progress" style="width: 25%"></div>
+          </div>
         </div>
-        <div class="available">Available: <strong>13</strong></div>
-        <div class="progress-bar"><div class="progress" style="width: 25%;"></div></div>
+
+        <div class="card3">
+          <div class="cardbody3">
+            <div class="cardimg3">
+              <img src="./sec2pic/blueiphon.png" alt="iPhone" />
+            </div>
+            <div class="stars">★★★☆☆ (51)</div>
+            <p>Apple iPhone 14 128GB Blue</p>
+            <div class="prices">
+              <h2>$899.00</h2>
+              <span class="old">$967.00</span>
+              <img
+                class="cart_button"
+                src="sec2pic/Secondary Button.png"
+                alt="Secondary Button"
+              />
+            </div>
+          </div>
+          <div class="available">
+            Available: <strong>7</strong>
+            <div class="progress-bar">
+              <div class="progress" style="width: 10%"></div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="offer-card">
-        <img src="./sec2pic/blueiphon.png" alt="iPhone">
-        <div class="stars">★★★☆☆ (51)</div>
-        <div class="product-name">Apple iPhone 14 128GB Blue</div>
-        <div class="prices">
-          <span>$899.00</span><span class="old">$967.00</span>
-          <img id="button" src="sec2pic/Secondary Button.png" alt="Secondary Button">
-        </div>
-        <div class="available">Available: <strong>7</strong></div>
-        <div class="progress-bar"><div class="progress" style="width: 10%;"></div></div>
+      <div class="brands">
+        <img src="./sec2pic/apple.png" alt="apple" />
+        <img src="./sec2pic/motorola.png" alt="motorola" />
+        <img src="./sec2pic/canon.png" alt="canon" />
+        <img src="./sec2pic/samsung.png" alt="samsung" />
+        <img src="./sec2pic/sony.png" alt="sony" />
+        <img id="btn" src="./sec2pic/logo.png" alt="logo-all" />
       </div>
-    </div>
-
-    <div class="brands">
-      <img src="./sec2pic/apple.png" alt="apple">
-      <img src="./sec2pic/motorola.png" alt="motorola">
-      <img src="./sec2pic/canon.png" alt="canon">
-      <img src="./sec2pic/samsung.png" alt="samsung">
-      <img src="./sec2pic/sony.png" alt="sony">
-      <img id="btn" src="./sec2pic/logo.png" alt="logo-all">
-    </div>
-  </div>
-
-  <footer>
-    
-  </footer>
     </main>
     <footer class="footer">
       <div class="container">
@@ -526,107 +594,137 @@
           <h2>Sign up to our newsletter</h2>
           <p>Receive our latest updates about our products & promotions</p>
           <div class="email-subscribe">
-            <input type="email" placeholder="Your email">
+            <input type="email" placeholder="Your email" />
             <button>Subscribe</button>
           </div>
           <div class="social-icons">
-            <a href="#"><i class="fab fa-instagram"><img src="./sec2pic/instagram.png" alt="instegram"></i></a>
-              <a href="#"><i class="fab fa-facebook-f"><img src="./sec2pic/facebook.png" alt="facebook"></i></a>
-                <a href="#"><i class="fab fa-youtube"><img src="./sec2pic/youtube.png" alt="youtube"></i></a>
-                  <a href="#"><i class="fab fa-telegram-plane"><img src="./sec2pic/telegram.png" alt="telegram"></i></a>
+            <a href="#"
+              ><img src="./sec2pic/instagram.png" alt="instegram"
+            /></a>
+            <a href="#"><img src="./sec2pic/facebook.png" alt="facebook" /></a>
+            <a href="#"><img src="./sec2pic/youtube.png" alt="youtube" /></a>
+            <a href="#"><img src="./sec2pic/telegram.png" alt="telegram" /></a>
           </div>
         </div>
-    
+
         <div class="videos">
           <div class="video-item">
-            <img src="./sec2pic/video1.jpg" alt="Video 1">
+            <img src="./sec2pic/video1.jpg" alt="Video 1" />
             <div>
               <p class="duration">6:16</p>
-              <p>5 New Cool Gadgets You Must See 
-                <br>on Cartzilla - Cheap Budget</p>
+              <p>
+                5 New Cool Gadgets You Must See <br />on Cartzilla - Cheap
+                Budget
+              </p>
             </div>
           </div>
           <div class="video-item">
-            <img src="./sec2pic/v2.jpg" alt="Video 2">
+            <img src="./sec2pic/v2.jpg" alt="Video 2" />
             <div>
               <p class="duration">10:20</p>
-              <p>5 Super Useful Gadgets on Cartzilla 
-               <br> You Must Have in 2023</p>
+              <p>
+                5 Super Useful Gadgets on Cartzilla <br />
+                You Must Have in 2023
+              </p>
             </div>
           </div>
           <div class="video-item">
-            <img src="./sec2pic/v3.jpg" alt="Video 3">
+            <img src="./sec2pic/v3.jpg" alt="Video 3" />
             <div>
               <p class="duration">8:40</p>
-              <p>Top 5 New Amazing Gadgets on
-                <br> Cartzilla You Must See</p>
+              <p>
+                Top 5 New Amazing Gadgets on <br />
+                Cartzilla You Must See
+              </p>
             </div>
           </div>
           <a href="#" class="view-all">View all &rarr;</a>
         </div>
-      </div> 
-        <div class="footer-end">
-          <div class="footer-column">
-            <h2>Cartzilla</h2>
-            <p>Got question? Contact us 24/7</p>
-            <button class="help-btn">Help and consultation</button>
-          </div>
-      
-          <div class="footer-column">
-            <h3>Company</h3>
-            <ul>
-              <li>About company</li>
-              <li>Our team</li>
-              <li>Careers</li>
-              <li>Contact us</li>
-              <li>News</li>
-            </ul>
-          </div>
-      
-          <div class="footer-column">
-            <h3>Account</h3>
-            <ul>
-              <li>Your account</li>
-              <li>Shipping rates & policies</li>
-              <li>Refunds & replacements</li>
-              <li>Delivery info</li>
-              <li>Order tracking</li>
-              <li>Taxes & fees</li>
-            </ul>
-          </div>
-      
-          <div class="footer-column">
-            <h3>Customer service</h3>
-            <ul>
-              <li>Payment methods</li>
-              <li>Money back guarantee</li>
-              <li>Product returns</li>
-              <li>Support center</li>
-              <li>Shipping</li>
-              <li>Terms and conditions</li>
-            </ul>
-          </div>
+      </div>
+      <div class="footer-end">
+        <div class="footer-column">
+          <h2>Cartzilla</h2>
+          <p>Got question? Contact us 24/7</p>
+          <button class="help-btn">
+            <a href="link of help page">Help and consultation</a>
+          </button>
         </div>
-      
-        <div class="footer-categories">
-         <div id="first"> Computers / Smartphones / TV, Video / Speakers / Cameras / Printers / Video Games /
-          Headphones / Wearable / HDD/SSD / Smart Home / Apple Devices / Tablets</div><div id="second"><br>
-          Heating and Cooling / Networking / E-reader / Scanners / Montors / Data Storage / Power Strips / Power Strips / Plugs Outlets
-          / Detectors and Sencors / Accessories
-        </div></div>
-       <hr class="gray-line">
-        <div class="footer-bottom">
-          <p>© All rights reserved. Made by Createx Studio</p>
-          <div class="payments">
-            <img src="./sec2pic/Name=Visa, Size=58, Mode=Dark.png" alt="Visa">
-            <img src="./sec2pic/Name=Mastercard, Size=58, Mode=Dark.png" alt="Mastercard">
-            <img src="./sec2pic/Name=GooglePay, Size=58, Mode=Dark.png" alt="Google Pay">
-            <img src="./sec2pic/Name=PayPal, Size=58, Mode=Dark.png" alt="paypal">
-            <img src="./sec2pic/Name=ApplePay, Size=58, Mode=Dark.png" alt="Apple Pay">
-          </div>
+
+        <div class="footer-column">
+          <h3>Company</h3>
+          <ul>
+            <li>About company</li>
+            <li>Our team</li>
+            <li>Careers</li>
+            <li>Contact us</li>
+            <li>News</li>
+          </ul>
         </div>
+
+        <div class="footer-column">
+          <h3>Account</h3>
+          <ul>
+            <li>Your account</li>
+            <li>Shipping rates & policies</li>
+            <li>Refunds & replacements</li>
+            <li>Delivery info</li>
+            <li>Order tracking</li>
+            <li>Taxes & fees</li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Customer service</h3>
+          <ul>
+            <li>Payment methods</li>
+            <li>Money back guarantee</li>
+            <li>Product returns</li>
+            <li>Support center</li>
+            <li>Shipping</li>
+            <li>Terms and conditions</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-categories">
+        <div id="first">
+          Computers / Smartphones / TV, Video / Speakers / Cameras / Printers /
+          Video Games / Headphones / Wearable / HDD/SSD / Smart Home / Apple
+          Devices / Tablets
+        </div>
+        <div id="second">
+          <br />
+          Heating and Cooling / Networking / E-reader / Scanners / Montors /
+          Data Storage / Power Strips / Power Strips / Plugs Outlets / Detectors
+          and Sencors / Accessories
+        </div>
+      </div>
+      <hr class="gray-line" />
+      <div class="footer-bottom">
+        <p>© All rights reserved. Made by Createx Studio</p>
+        <div class="payments">
+          <img src="./sec2pic/Name=Visa, Size=58, Mode=Dark.png" alt="Visa" />
+          <img
+            src="./sec2pic/Name=Mastercard, Size=58, Mode=Dark.png"
+            alt="Mastercard"
+          />
+          <img
+            src="./sec2pic/Name=GooglePay, Size=58, Mode=Dark.png"
+            alt="Google Pay"
+          />
+          <img
+            src="./sec2pic/Name=PayPal, Size=58, Mode=Dark.png"
+            alt="paypal"
+          />
+          <img
+            src="./sec2pic/Name=ApplePay, Size=58, Mode=Dark.png"
+            alt="Apple Pay"
+          />
+        </div>
+      </div>
     </footer>
-    <script src="./public/actoins.js"></script>
-    <script src="./public/home.js"></script>
+    <script src="./public/js_files/actoins.js"></script>
+    <script src="./public/js_files/home.js"></script>
+    <script src="./public/js_files/cart.js"></script>
   </body>
 </html>

@@ -1,0 +1,224 @@
+.sec4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-bg);
+  padding: 40px;
+  max-width: 1300px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.left-sec {
+  background-color: #12283a;
+  color: white;
+  flex: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  height: 150px;
+  border-right: 2px dashed #2c3e50;
+  margin-right: -2px;
+  /* z-index: 2; */
+}
+
+.discount {
+  font-size: 7rem;
+  font-weight: bold;
+  line-height: 1;
+  /* position: relative; */
+  display: flex;
+  align-items: flex-start;
+}
+
+.percent-symbol {
+  font-size: 2rem;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.off {
+  /* position: absolute; */
+  bottom: 56px;
+  left: 150px;
+  font-size: 0.8rem;
+}
+
+.middle-right-sec {
+  flex: 2.2;
+  display: flex;
+  background-color: #12283a;
+  border-radius: 20px;
+  height: 150px;
+  overflow: hidden;
+  /* z-index: 1; */
+}
+
+.middle-sec {
+  flex: 1.2;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.middle-sec h2 {
+  font-size: 1.5rem;
+  margin: 0 0 10px 0;
+}
+
+.middle-sec p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.code {
+  background-color: #fff;
+  color: #000;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.right-sec {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 10px;
+}
+
+.camera-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.offers-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.offers-header {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  gap: 10px;
+}
+
+.offers-header h2 {
+  font-size: 1.8rem;
+}
+
+.countdown .tag {
+  background-color: var(--orang);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.tagp {
+  background-color: var(--dark-bg);
+  color: white;
+}
+.leftview {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #12283a;
+  margin: 10px 0 20px 0;
+}
+.offer-container {
+  position: relative;
+}
+.offers-grid {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: auto;
+  /* position: relative; */
+  justify-content: space-between;
+  gap: 10px;
+  padding: 20px 40px;
+}
+
+.offer-card {
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--dark-bg);
+  color: white;
+  border-radius: 16px;
+  padding: 20px;
+  flex: 1 1 230px;
+  text-align: center;
+  /* position: relative; */
+}
+
+.cardbody3 .card3 img {
+  max-width: 200px;
+  margin-bottom: 10px;
+}
+
+.stars {
+  color: gold;
+  margin-bottom: 5px;
+}
+
+.offers-grid .card3 .cardbody3 p {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.cardbody3 .prices {
+  margin: 5px 0;
+}
+
+.cardbody3 .prices .old {
+  text-decoration: line-through;
+  color: #888;
+  margin-left: 10px;
+}
+.available {
+  font-size: 0.9rem;
+  margin-top: 10px;
+  color: #aaa;
+}
+
+.progress-bar {
+  background-color: #2d3748;
+  border-radius: 5px;
+  height: 6px;
+  margin-top: 8px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #e63946;
+  border-radius: 5px;
+}
+
+.brands {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.brands div {
+  background-color: #1e2a36;
+  padding: 15px 30px;
+  border-radius: 12px;
+  font-weight: bold;
+  color: #ccc;
+}
+
+.brands div:hover {
+  background-color: #2d3e50;
+  color: white;
+}

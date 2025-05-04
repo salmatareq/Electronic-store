@@ -107,6 +107,6 @@ h2 {
   display: inline;
 }
 
-#button {
+.cart_button {
   float: right;
 }

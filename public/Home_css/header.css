@@ -62,7 +62,10 @@ td {
 tr {
   height: 48px;
 }
-
+a {
+  text-decoration: none;
+  color: white;
+}
 .Categories {
   display: flex;
   align-items: center;

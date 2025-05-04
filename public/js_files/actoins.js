@@ -8,5 +8,3 @@ arrow.addEventListener("click", function () {
     hidden_menu.style.display = "block";
   }
 });
-console.log("done");
-
