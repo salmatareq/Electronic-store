@@ -1,109 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login page</title>
-    <link rel="stylesheet" href="./public/Home_css/stylelogin.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+
+  <!-- Main CSS Files -->
+  <link rel="stylesheet" href="./public/Home_css/stylelogin.css" />
+  <link rel="stylesheet" href="./public/Home_css/header.css" />
+  <link rel="stylesheet" href="./public/Home_css/sec1.css" />
+  <link rel="stylesheet" href="./public/cart_css/cart.css" />
+  <link rel="stylesheet" href="./public/Home_css/index.css" />
+  <link rel="stylesheet" href="./public/Home_css/stylesec2.css" />
+  <link rel="stylesheet" href="./public/Home_css/sec4.css" />
+  <link rel="stylesheet" href="./public/Home_css/footer.css" />
+  <link rel="stylesheet" href="./public/Home_css/best.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="./public/assets/logo.svg" type="image/svg+xml" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bitter:wght@100..900&family=Inter:wght@100..900&family=Montserrat:wght@100..900&family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet" />
 </head>
-<body>
-    <div class="container">
-        <form >
-
-        <h1>Registration</h1>
-
-        <div class="page">
-            <div class="part">
-                <div class="lable"> 
-                    <lable>Frist Name</lable>
-                </div>
-                
-                <div class="icon">
-                    <img src="./public/assets/img/user(1).png" >
-                </div>
-            </div>
-            <input id="inp" type="text" name="frist_Name " maxlength="30"required>
-            
-
-
-
-            <div class="part">
-                <div class="lable"> 
-                    <lable>Last Name</lable>
-                </div>
-                
-                <div class="icon">
-                    <img src="./public/assets/img/user(1).png" >
-                </div>
-            </div>
-            <input id="inp"  type="text" name="last_Name " maxlength="30"required>
-
-
-            <div class="part">
-                <div class="lable"> 
-                    <lable>Email</lable>
-                </div>
-                
-                <div class="icon">
-                    <img src="./public/assets/img/email(1).png" >
-                </div>
-            </div>
-            <input  id="inp" type="mail" name="email"required>
- 
-
-
-            <div class="part">
-                <div class="lable"> 
-                    <lable>Phone number</lable>
-                </div>
-                
-                <div class="icon">
-                    <img src="./public/assets/img/telephone(1).png" >
-                </div>
-            </div>
-            <input  id="inp" type="number" name="phone"required>
-
-
-
-
-            <div class="part">
-                <div class="lable"> 
-                    <lable>Password</lable>
-                </div>
-                
-                <div class="icon">
-                    <img src="./public/assets/img/padlock (1).png" >
-                </div>
-            </div>
-            <input id="inp"  type="password" name="password" maxlength="30"required>
-
-
-            <div class="part">
-                <div class="lable"> 
-                    <lable> confirm Password</lable>
-                </div>
-                
-                <div class="icon">
-                    <img src="./public/assets/img/confirm.png" >
-                </div>
-            </div>
-            <input id="inp"  type="password" name="confirm password" maxlength="30"required>
-        
-            <div class="lastpart1">
-                <input class="check"type="checkbox">
-                <lable>remember me any time</lable>
-            </div>
-           
-            <div class="lastpart2">
-                <button type="submit" >Register</button>
-
-                <p>Have an account already? <span> log in </span></p>  
-            </div>
-           
+ <!-- Header Section -->
+ <header>
+    <div class="head1">
+      <div class="top-header">
+        <div class="head-icon">
+          <img src="./public/assets/logo.svg" alt=" " />
+          Cartzilla
         </div>
-    </form>
-    </div>
+        <nav>
+          <div class="search">
+            <div>
+              <img src="./public/assets/Icon.svg" alt="" /> Search the products
+            </div>
+          </div>
+          <div class="sale">
+            <img src="./public/assets/Secondary Button.svg" alt="" />
+            <div>
+              Only this month<br />
 
+              Super Sale 20%
+            </div>
+          </div>
+          <div class="icons">
+            <img src="./public/assets/Secondary Button mode.svg" alt="" />
+            <img
+              src="./public/assets/Secondary Button love.svg"
+              alt=""
+              class="love"
+            />
+            <img src="./public/assets/Secondary Button persone.svg" alt="" />
+            <div class="cart">
+              <img src="./public/assets/Secondary Button cart.svg" alt="" />
+              <div class="num_products" attribute="number">0</div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="navbar">
+        <table>
+          <tr>
+            <td class="Categories">
+              Categories
+              <img class="toclick" src="./public/assets/arrow.svg" alt="" />
+            </td>
+            <td></td>
+
+            <td><a href="./index.html">Home</a></td>
+            <td><a href="./Best.html">Best Sellers</a></td>
+            <td><a href="">About Us</a></td>
+            <td><a href="./login.html">Register</a></td>
+            <td><a href="./help.html">Help center</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </header>
+<body>
+  <!-- Main Registration Form -->
+  <main class="login">
+    <div class="container2">
+      <form>
+        <h1>Registration</h1>
+        <div class="page">
+
+          <!-- First Name -->
+          <div class="part">
+            <label>First Name</label>
+            <div class="icon"><img src="./public/assets/img/user(1).png" alt="User" /></div>
+            <input id="inp" type="text" name="first_name" maxlength="30" required />
+          </div>
+
+          <!-- Last Name -->
+          <div class="part">
+            <label>Last Name</label>
+            <div class="icon"><img src="./public/assets/img/user(1).png" alt="User" /></div>
+            <input id="inp" type="text" name="last_name" maxlength="30" required />
+          </div>
+
+          <!-- Email -->
+          <div class="part">
+            <label>Email</label>
+            <div class="icon"><img src="./public/assets/img/email(1).png" alt="Email" /></div>
+            <input id="inp" type="email" name="email" required />
+          </div>
+
+          <!-- Phone Number -->
+          <div class="part">
+            <label>Phone Number</label>
+            <div class="icon"><img src="./public/assets/img/telephone(1).png" alt="Phone" /></div>
+            <input id="inp" type="tel" name="phone" required />
+          </div>
+
+          <!-- Password -->
+          <div class="part">
+            <label>Password</label>
+            <div class="icon"><img src="./public/assets/img/padlock (1).png" alt="Password" /></div>
+            <input id="inp" type="password" name="password" maxlength="30" required />
+          </div>
+
+          <!-- Confirm Password -->
+          <div class="part">
+            <label>Confirm Password</label>
+            <div class="icon"><img src="./public/assets/img/confirm.png" alt="Confirm" /></div>
+            <input id="inp" type="password" name="confirm_password" maxlength="30" required />
+          </div>
+
+          <!-- Remember Me -->
+          <div class="lastpart1">
+            <input class="check" type="checkbox" />
+            <label>Remember me anytime</label>
+          </div>
+
+          <!-- Submit -->
+          <div class="lastpart2">
+            <button type="submit">Register</button>
+            <p>Have an account already? <span><a href="./login.html">Log in</a></span></p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-end">
+          <div class="footer-column">
+            <h2>Cartzilla</h2>
+            <p>Got question? Contact us 24/7</p>
+            <button class="help-btn">
+              <a href="./help.html">Help and consultation</a>
+            </button>
+          </div>
+  
+          <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+              <li>About company</li>
+              <li>Our team</li>
+              <li>Careers</li>
+              <li>Contact us</li>
+              <li>News</li>
+            </ul>
+          </div>
+  
+          <div class="footer-column">
+            <h3>Account</h3>
+            <ul>
+              <li>Your account</li>
+              <li>Shipping rates & policies</li>
+              <li>Refunds & replacements</li>
+              <li>Delivery info</li>
+              <li>Order tracking</li>
+              <li>Taxes & fees</li>
+            </ul>
+          </div>
+  
+          <div class="footer-column">
+            <h3>Customer service</h3>
+            <ul>
+              <li>Payment methods</li>
+              <li>Money back guarantee</li>
+              <li>Product returns</li>
+              <li>Support center</li>
+              <li>Shipping</li>
+              <li>Terms and conditions</li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="footer-categories">
+          <div id="first">
+            Computers / Smartphones / TV, Video / Speakers / Cameras / Printers /
+            Video Games / Headphones / Wearable / HDD/SSD / Smart Home / Apple
+            Devices / Tablets
+          </div>
+          <div id="second">
+            <br />
+            Heating and Cooling / Networking / E-reader / Scanners / Montors /
+            Data Storage / Power Strips / Power Strips / Plugs Outlets / Detectors
+            and Sencors / Accessories
+          </div>
+        </div>
+        <hr class="gray-line" />
+        <div class="footer-bottom">
+          <p>© All rights reserved. Made by Createx Studio</p>
+          <div class="payments">
+            <img src="./sec2pic/Name=Visa, Size=58, Mode=Dark.png" alt="Visa" />
+            <img
+              src="./sec2pic/Name=Mastercard, Size=58, Mode=Dark.png"
+              alt="Mastercard"
+            />
+            <img
+              src="./sec2pic/Name=GooglePay, Size=58, Mode=Dark.png"
+              alt="Google Pay"
+            />
+            <img
+              src="./sec2pic/Name=PayPal, Size=58, Mode=Dark.png"
+              alt="paypal"
+            />
+            <img
+              src="./sec2pic/Name=ApplePay, Size=58, Mode=Dark.png"
+              alt="Apple Pay"
+            />
+          </div>
+        </div>
+      </footer>
     <script src="./public/js_files/validation.js"></script>
 
 </body>
