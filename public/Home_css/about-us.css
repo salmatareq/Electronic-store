@@ -1,4 +1,20 @@
-header{
+
+
+
+
+:root {
+    --header-bg: rgb(34, 41, 52);
+    --categ: rgb(51, 61, 76);
+    --dark-bg: rgb(24, 29, 37);
+     /* --orang: rgb(245, 85, 110);  */
+    --font-light: rgb(108, 114, 127);
+    --orang:#805ad5;
+    --linear-blue: linear-gradient(to right, rgb(27, 39, 58), rgb(31, 38, 50));
+  }
+  
+  
+  
+  header{
     z-index: 2;
 }
 
@@ -137,7 +153,7 @@ body {
 }
 
 .bar-fill {
-    background: rgba(245, 82, 110, 1);
+    background:var(--orang);
     height: 100%;
     width: 0;
     border-radius: 10px;
@@ -215,13 +231,16 @@ body {
 .reviews-title {
     text-align: center;
     font-size: 2rem;
-    color: rgba(245, 82, 110, 1);
+    color:var(--orang);
     margin-bottom: 20px;
 }
 
 .reviews-carousel {
     overflow: hidden;
     white-space: nowrap;
+    display: flex;
+    align-items: center;
+    height: 350px;
 }
 
 .review-track {
@@ -234,7 +253,7 @@ body {
     width: 300px;
     margin-right: 20px;
     padding: 20px;
-    background: #2a2a2a;
+    background: var(--header_bg);
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
     transition: transform 0.3s, box-shadow 0.3s;
@@ -245,11 +264,12 @@ body {
 
 .review-card:hover {
     transform: scale(1.03);
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 15px rgba(57, 25, 68, 0.15);
 }
 
 .stars::before {
     content: '★★★★★';
+    
     color: #555;
 }
 
@@ -303,7 +323,7 @@ body {
     width: 300px;
     margin-right: 20px;
     padding: 20px;
-    background: #2a2a2a;
+    background: var(--categ);
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
     transition: transform 0.3s, box-shadow 0.3s;  
@@ -314,7 +334,8 @@ body {
 
 .review-card:hover {
     transform: scale(1.03);
-    box-shadow: 0 0 23px rgba(248, 163, 6, 0.5);  
+    box-shadow: 0 0 23px rgba(118, 60, 168, 0.5);  
+
 }
 
 .reviews-carousel .review-track:hover {

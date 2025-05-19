@@ -8,73 +8,141 @@
     <link href="./public/Home_css/header.css" rel="stylesheet" />
     <link href="./public/Home_css/footer.css" rel="stylesheet" />
     <link href="./public/Home_css/new-about-us.css" rel="stylesheet" />
+  <link href="./public/Home_css/sec1_bout.css" rel="stylesheet"/>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+<link rel="icon" href="./public/assets/logo2.jpg" type="image/svg+xml" />
+
   </head>
 
-  <header>
-    <div class="head1">
-      <div class="top-header">
-        <div class="head-icon">
-          <img src="./public/assets/logo.svg" alt=" " />
-          Cartzilla
-        </div>
-        <nav>
-          <div class="search">
-            <div>
-              <img src="./public/assets/Icon.svg" alt="" /> Search the products
-            </div>
-          </div>
-          <div class="sale">
-            <img src="./public/assets/Secondary Button.svg" alt="" />
-            <div>
-              Only this month<br />
-
-              Super Sale 20%
-            </div>
-          </div>
-          <div class="icons">
-            <img src="./public/assets/Secondary Button mode.svg" alt="" />
-            <img
-              src="./public/assets/Secondary Button love.svg"
-              alt=""
-              class="love"
-            />
-            <img src="./public/assets/Secondary Button persone.svg" alt="" />
-            <div class="cart">
-              <img src="./public/assets/Secondary Button cart.svg" alt="" />
-              <div class="num_products" attribute="number">0</div>
-            </div>
-          </div>
-        </nav>
-      </div>
-      <div class="navbar">
-        <table>
-          <tr>
-            <td class="Categories">
-              Categories
-              <img class="toclick" src="./public/assets/arrow.svg" alt="" />
-            </td>
-            <td></td>
-
-            <td><a href="./index.html">Home</a></td>
-            <td><a href="./Best.html">Best Sellers</a></td>
-            <td><a href="./about-reviews.html">About Us</a></td>
-            <td><a href="./login.html">Register</a></td>
-            <td><a href="./help.html">Help center</a></td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  </header>
+  
 
   <body>
+    <header>
+      <div class="head1">
+        <div class="top-header">
+          <div class="head-icon">
+            <i class="fas fa-cart-shopping" style="
+            background-color:#805ad5; 
+            color: white;              
+            padding: 10px;
+            border-radius: 50%;       
+            font-size: 21px;
+            display: flex;
+            text-align: center;
+            width: 19px;
+            height: 19px;
+            line-height: 20px;
+            align-items: center;
+            justify-content: center;
+            transform: rotate(328deg);
+        "></i>
+         JYMSH
+          </div>
+          <nav>
+            <div class="search">
+              <div>
+                <img src="./public/assets/Icon.svg" alt="" /> Search the products
+              </div>
+            </div>
+            <div class="sale">
+              <i class="fa-solid fa-percent" style="
+              color: #9370db;
+              font-size: 19px;
+              background-color: rgb(83 88 95 / 56%);
+              padding: 10px;
+              border-radius: 50%;
+              display: inline-block;
+              width: 20px;
+              height: 20px;
+              text-align: center;
+              line-height: 24px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            "
+            
+            ></i>
+            
+              <div>
+                Only this month<br />
+  
+                Super Sale 20%
+              </div>
+            </div>
+            <div class="icons">
+              <img src="./public/assets/Secondary Button mode.svg" alt="" />
+              <img
+                src="./public/assets/Secondary Button love.svg"
+                alt=""
+                class="love"
+              />
+              <img src="./public/assets/Secondary Button persone.svg" alt="" />
+              <div class="cart">
+                <img src="./public/assets/Secondary Button cart.svg" alt="" />
+                <div class="num_products" attribute="number">0</div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="navbar">
+          <table>
+            <tr>
+              <td class="Categories">
+                Categories
+                <img class="toclick" src="./public/assets/arrow.svg" alt="" />
+              </td>
+              <td></td>
+  
+              <td><a href="./index.html">Home</a></td>
+              <td><a href="./Best.html">Best Sellers</a></td>
+              <td><a href="./about-reviews.html">About Us</a></td>
+              <td><a href="./login.html">Register</a></td>
+              <td><a href="./help.html">Help center</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </header>
     <!-- cover photo -->
-    <section class="hero-images">
-      <img
+    <!-- <section class="hero-images"> -->
+      <!-- <img
         src="./sec2pic/about-us cover photo.png"
         alt="Hero 2"
         class="hero2"
-      />
-    </section>
+      /> -->
+      <div class="sec1">
+      <div class="particles" id="particles"></div>
+    
+      <!-- <div id="loading-container">
+          <span id="loading-text">Waiting for</span>
+          <span id="dots"></span>
+      </div> -->
+      
+      <div id="text-container">
+          <span class="letter j">J</span>
+          <span class="letter y">Y</span>
+          <span class="letter m">M</span>
+          <span class="letter s">S</span>
+          <span class="letter h">H</span>
+      </div>
+      
+      <div id="tagline">Just Young Minds Seeking Highest</div>
+      
+      <div id="names">
+        <div class="name">Jomana</div>
+        <div class="name">Yara</div>
+        <div class="name">Martina</div>
+         
+          <div class="name">Salma</div>
+          <div class="name">Heba</div>
+         
+          
+      </div>
+    </div>
+    <!-- </section> -->
 
     <!-- About us paragraph-->
     <section class="about-section">
@@ -360,5 +428,6 @@
     </footer>
 
     <script src="./public/js_files/about-us.js"></script>
+    <script src="./public/js_files/se1.js"></script>
   </body>
 </html>

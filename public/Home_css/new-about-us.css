@@ -2,8 +2,9 @@
     --header-bg: rgb(34, 41, 52);
     --categ: rgb(51, 61, 76);
     --dark-bg: rgb(24, 29, 37);
-    --orang: rgb(245, 85, 110);
+    /* --orang: rgb(245, 85, 110); */
     --font-light: rgb(108, 114, 127);
+    --orang:#9370db;
     --linear-blue: linear-gradient(to right, rgb(27, 39, 58), rgb(31, 38, 50));
   }
   
