@@ -3,7 +3,7 @@ header {
   flex-direction: column;
   width: 100%;
   justify-content: space-evenly;
-  height: 142px;
+  height: 155px;
   align-items: center;
   color: white;
   background-color: var(--header-bg);

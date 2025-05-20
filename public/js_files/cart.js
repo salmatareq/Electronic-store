@@ -1,25 +1,4 @@
-// const plusButtons = document.querySelectorAll(".plus");
-// const minusButtons = document.querySelectorAll(".minus");
 
-// plusButtons.forEach((plusBtn) => {
-//   plusBtn.addEventListener("click", () => {
-//     const parent = plusBtn.closest(".quantity-selector");
-//     const quantityEl = parent.querySelector(".quantity");
-//     let current = parseInt(quantityEl.textContent);
-//     quantityEl.textContent = current + 1;
-//   });
-// });
-
-// minusButtons.forEach((minusBtn) => {
-//   minusBtn.addEventListener("click", () => {
-//     const parent = minusBtn.closest(".quantity-selector");
-//     const quantityEl = parent.querySelector(".quantity");
-//     let current = parseInt(quantityEl.textContent);
-//     if (current > 1) {
-//       quantityEl.textContent = current - 1;
-//     }
-//   });
-// });
 
 const hidden_cart = document.querySelector("#cart_sec");
 const x = document.querySelector("#x");
